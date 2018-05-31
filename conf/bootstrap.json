@@ -1,0 +1,10 @@
+{
+    "consul": null,
+    "application": {
+      "cycle": [
+        "ConfigCommand",
+        "RedisCommand",
+        "HTTPServerCommand"
+      ]
+    }
+  }
