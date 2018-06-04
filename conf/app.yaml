@@ -1,3 +1,20 @@
+http:
+    middleware:
+        - CORSGinHTTPMiddleware
+        - RequestChainHTTPMiddleware
+    # middleware:
+        # - Logger
+        # - CORS
+        # - Recovery
+        # - CaughtError
+        # - Sentry
+        # - Swagger
+        # - RequestID
+        # - Sentry
+
+    static:
+        - public
+
 redis:
     default:
         password: ""

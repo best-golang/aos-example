@@ -4,6 +4,7 @@
       "cycle": [
         "ConfigCommand",
         "RedisCommand",
+        "GinHTTPMiddlewareCommand",
         "HTTPServerCommand"
       ]
     }
