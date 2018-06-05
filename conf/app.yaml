@@ -15,6 +15,21 @@ http:
     static:
         - public
 
+
+database:
+    default:
+        host: 127.0.0.1
+        port: 3306
+        username: root
+        password: ""
+        database: example
+        max_idle: 10
+        max_open: 200
+        max_left_time: 3600
+        # prefix: 
+        log_sql: true
+        log_sql_execute_time: true
+        log_level: INFO
 redis:
     default:
         password: ""
