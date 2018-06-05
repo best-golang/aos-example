@@ -1,3 +1,7 @@
+application:
+    enviroment: local
+    debug: true
+
 http:
     middleware:
         - CORSGinHTTPMiddleware
@@ -15,6 +19,22 @@ http:
     static:
         - public
 
+    server:
+        port: 4070
+        timeout:
+            read: 10000
+            write: 10000
+
+logger:
+    handlers:
+        graylog:
+            host: 127.0.0.1
+            port: 0000
+            protocol: udp
+            level: DEBUG
+
+        console:
+            level: DEBUG
 
 database:
     default:
