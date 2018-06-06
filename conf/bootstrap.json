@@ -3,6 +3,7 @@
     "application": {
       "cycle": [
         "ConfigCommand",
+        "XORMCommand",
         "RedisCommand",
         "GinHTTPMiddlewareCommand",
         "HTTPServerCommand"
