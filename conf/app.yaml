@@ -38,11 +38,12 @@ logger:
 
 database:
     default:
-        host: 127.0.0.1
+        type: mysql
+        host: localhost
         port: 3306
         username: root
-        password: ""
-        database: example
+        password: "123456"
+        database: test
         max_idle: 10
         max_open: 200
         max_left_time: 3600
