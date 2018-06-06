@@ -1,11 +1,13 @@
 {
-    "consul": null,
-    "application": {
-      "cycle": [
-        "ConfigCommand",
-        "RedisCommand",
-        "GinHTTPMiddlewareCommand",
-        "HTTPServerCommand"
-      ]
-    }
+  "consul": null,
+  "application": {
+    "cycle": [
+      "ConfigCommand",
+      "EnvExampleCommand",
+      "LoggerCommand",
+      "RedisCommand",
+      "GinHTTPMiddlewareCommand",
+      "HTTPServerCommand"
+    ]
   }
+}

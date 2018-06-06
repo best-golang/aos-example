@@ -1,15 +1,20 @@
 package app
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	aosContainer "github.com/aos-stack/aos/container"
+	"github.com/gin-gonic/gin"
 )
 
 type HelloWorldController struct {
-
 }
 
-func (this *HelloWorldController)Index(c *gin.Context) {
+// Index ...
+func (this *HelloWorldController) Index(c *gin.Context) {
+	logger := aosContainer.GetLogger("logger")
+
+	logger.Info("hhhhhhhhhhh")
 	c.String(http.StatusOK, "hello world")
 }
 

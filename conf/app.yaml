@@ -22,19 +22,19 @@ http:
     server:
         port: 4070
         timeout:
-            read: 10000
-            write: 10000
+            read: 60
+            write: 60
 
 logger:
     handlers:
         graylog:
-            host: 127.0.0.1
-            port: 0000
+            host: g02.graylog.gaodunwangxiao.com
+            port: 5504
             protocol: udp
-            level: DEBUG
-
+            level: -1
         console:
             level: DEBUG
+    fields: item:testnow
 
 database:
     default:
