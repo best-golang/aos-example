@@ -1,7 +1,8 @@
 package main
 
 import (
-	"aos-example/app"
+	container "aos-example/app/bind-service"
+	router "aos-example/app/routers"
 	"aos-example/env"
 
 	"github.com/aos-stack/aos"
@@ -10,11 +11,11 @@ import (
 )
 
 func main() {
-
 	interfaces.AddCommand("EnvExampleCommand", env.EnvExampleCommand{})
 
 	aos.RegisterRouter(func(engine *gin.Engine) {
-		engine.GET("/", app.NewHelloWorldController().Index)
+		container.GetContainer()
+		router.InitRouter(engine)
 	})
 	aos.Run()
 }

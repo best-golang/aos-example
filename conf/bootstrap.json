@@ -1,9 +1,9 @@
 {
-  "consul": null,
   "application": {
     "cycle": [
       "ConfigCommand",
       "EnvExampleCommand",
+      "ConsulCommand",
       "LoggerCommand",
       "RedisCommand",
       "GinHTTPMiddlewareCommand",

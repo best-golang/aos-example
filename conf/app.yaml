@@ -1,7 +1,14 @@
 application:
     enviroment: local
     debug: true
-
+consul: 
+    url: consul.gaodunwangxiao.com
+    list_name: gaodun/config_center/
+    env_fix: 
+        local: test.
+        test: t.
+        prepare: pre.
+        production : pro.
 http:
     middleware:
         - CORSGinHTTPMiddleware
