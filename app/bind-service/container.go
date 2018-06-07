@@ -21,7 +21,7 @@ func GetContainer() *Container {
 }
 
 type Container struct {
-	DemoApi *controller.DemoApi
+	DemoDDDApi *controller.DemoDDDApi
 }
 
 func (c *Container) init() {
@@ -29,8 +29,8 @@ func (c *Container) init() {
 	var demoDAO domain.DemoDAO = persistence.NewDemoDAOXorm(dbDemoConn)
 	var demoService = service.NewDemoServiceImplements(demoDAO)
 
-	c.DemoApi = controller.NewDemoApi(demoService)
-	aosContainer.ContainerSet("demoApi", c.DemoApi)
+	c.DemoDDDApi = controller.NewDemoDDDApi(demoService)
+	aosContainer.ContainerSet("demoDDDApi", c.DemoDDDApi)
 }
 
 func initEng(num int) *xorm.Engine {

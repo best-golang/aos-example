@@ -10,11 +10,11 @@ import (
 
 func InitRouter(engine *gin.Engine) {
 
-	// engine.GET("/", app.NewHelloWorldController().Index)
-	// engine.GET("/test", app.NewHelloWorldController().Index2)
-	demoApi := aosContainer.ContainerGet("demoApi").(*controller.DemoApi)
-
+	demoDDDApi := aosContainer.ContainerGet("demoDDDApi").(*controller.DemoDDDApi)
+	demoApi := controller.NewDemoApi()
 	engine.GET("/", demoApi.Index)
 	engine.GET("/test", demoApi.Index2)
 
+	engine.GET("/hasddd", demoDDDApi.Index)
+	engine.GET("/hasddd/test", demoDDDApi.Index2)
 }
