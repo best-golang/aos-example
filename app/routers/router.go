@@ -11,6 +11,7 @@ import (
 func InitRouter(engine *gin.Engine) {
 
 	demoDDDApi := aosContainer.ContainerGet("demoDDDApi").(*controller.DemoDDDApi)
+
 	demoApi := controller.NewDemoApi()
 	engine.GET("/", demoApi.Index)
 	engine.GET("/test", demoApi.Index2)

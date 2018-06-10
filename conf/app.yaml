@@ -13,6 +13,7 @@ http:
     middleware:
         - CORSGinHTTPMiddleware
         - RequestChainHTTPMiddleware
+       - SessionsGinHTTPMiddleware
     # middleware:
         # - Logger
         # - CORS
