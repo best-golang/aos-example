@@ -1,8 +1,10 @@
 package controller
 
 import (
+	"fmt"
 	"net/http"
 
+	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 )
 
@@ -17,6 +19,19 @@ func NewDemoApi() *DemoApi {
 
 // Index ...
 func (myc *DemoApi) Index(c *gin.Context) {
+
+	session := sessions.Default(c)
+	var count int
+	v := session.Get("count")
+	if v == nil {
+		count = 0
+	} else {
+		count = v.(int)
+		count++
+	}
+	session.Set("count", count)
+	session.Save()
+	fmt.Println(count)
 	c.String(http.StatusOK, "hello world no ddd")
 }
 

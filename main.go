@@ -16,6 +16,7 @@ func main() {
 	aos.RegisterRouter(func(engine *gin.Engine) {
 		container.GetContainer()
 		router.InitRouter(engine)
+		//
 	})
 	aos.Run()
 }
