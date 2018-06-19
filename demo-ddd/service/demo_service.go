@@ -1,7 +1,7 @@
 package service
 
 import (
-	"aos-example/demo-ddd/domain"
+	"github.com/aos-stack/aos-example/demo-ddd/domain"
 )
 
 type DemoService interface {

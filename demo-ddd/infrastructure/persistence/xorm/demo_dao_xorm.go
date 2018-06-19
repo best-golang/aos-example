@@ -1,7 +1,7 @@
 package persistence
 
 import (
-	"aos-example/demo-ddd/domain"
+	"github.com/aos-stack/aos-example/demo-ddd/domain"
 
 	"github.com/go-xorm/xorm"
 )
