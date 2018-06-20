@@ -1,10 +1,10 @@
 package container
 
 import (
-	"aos-example/app/controller"
-	"aos-example/demo-ddd/domain"
-	"aos-example/demo-ddd/infrastructure/persistence/xorm"
-	"aos-example/demo-ddd/service"
+	"github.com/aos-stack/aos-example/app/controller"
+	"github.com/aos-stack/aos-example/demo-ddd/domain"
+	"github.com/aos-stack/aos-example/demo-ddd/infrastructure/persistence/xorm"
+	"github.com/aos-stack/aos-example/demo-ddd/service"
 
 	aosContainer "github.com/aos-stack/aos/container"
 	"github.com/go-xorm/xorm"

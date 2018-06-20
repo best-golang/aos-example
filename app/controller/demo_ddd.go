@@ -4,8 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"aos-example/demo-ddd/service"
-
+	"github.com/aos-stack/aos-example/demo-ddd/service"
 	aosContainer "github.com/aos-stack/aos/container"
 	"github.com/gin-gonic/gin"
 )

@@ -1,7 +1,7 @@
 package router
 
 import (
-	"aos-example/app/controller"
+	"github.com/aos-stack/aos-example/app/controller"
 
 	aosContainer "github.com/aos-stack/aos/container"
 

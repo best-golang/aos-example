@@ -1,9 +1,9 @@
 package main
 
 import (
-	container "aos-example/app/bind-service"
-	router "aos-example/app/routers"
-	"aos-example/env"
+	container "github.com/aos-stack/aos-example/app/bind-service"
+	router "github.com/aos-stack/aos-example/app/routers"
+	"github.com/aos-stack/aos-example/env"
 
 	"github.com/aos-stack/aos"
 	"github.com/aos-stack/aos/interfaces"
