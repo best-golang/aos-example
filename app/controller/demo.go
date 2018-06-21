@@ -5,8 +5,6 @@ import (
 	"net/http"
 
 	"github.com/gin-contrib/sessions"
-	"github.com/aos-stack/aos-example/demo-ddd/service"
-	aosContainer "github.com/aos-stack/aos/container"
 	"github.com/gin-gonic/gin"
 )
 
